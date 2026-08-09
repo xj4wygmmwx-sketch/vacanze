@@ -420,9 +420,9 @@ ul.plain-list li:before{content:'→'; position:absolute; left:0; color:var(--go
     </div>
     <div class="stats">
       <div class="stat"><div class="num">23</div><div class="lbl">Giorni</div></div>
-      <div class="stat"><div class="num">4.487</div><div class="lbl">Km</div></div>
-      <div class="stat"><div class="num">195 €</div><div class="lbl">Pedaggi</div></div>
-      <div class="stat"><div class="num">404 €</div><div class="lbl">Carburante</div></div>
+      <div class="stat"><div class="num">4.415</div><div class="lbl">Km</div></div>
+      <div class="stat"><div class="num">190 €</div><div class="lbl">Pedaggi</div></div>
+      <div class="stat"><div class="num">397 €</div><div class="lbl">Carburante</div></div>
       <div class="stat"><div class="num" id="countdownNum">–</div><div class="lbl" id="countdownLbl">Countdown</div></div>
     </div>
   </header>
@@ -664,25 +664,25 @@ const stops = [
     ]
   },
   {
-    id:'ronda', name:'Ronda', hex:'#f2a65a',
-    lat:36.7213, lon:-5.1636, cityQuery:'Ronda, Spagna',
-    from:'14/8', to:'15/8', nights:1, accomCost:61,
-    accomName:'Apartamentos Morales',
-    accomAddress:'Calle Armiñán 33, 29400 Ronda, Málaga, Spagna',
-    checkIn:'14:00', checkOut:'12:00',
+    id:'jerez', name:'Jerez de la Frontera', hex:'#f2a65a',
+    lat:36.6810, lon:-6.1347, cityQuery:'Jerez de la Frontera, Spagna',
+    from:'14/8', to:'15/8', nights:1, accomCost:111.60,
+    accomName:'Hotel Boutique Palacio Corredera',
+    accomAddress:'Calle Corredera 49-51, 11402 Jerez de la Frontera, Spagna',
+    checkIn:'15:00–23:30', checkOut:'07:00–12:00',
     todo:[
-      {t:'Puente Nuevo, Ronda', info:'Ponte del XVIII secolo che scavalca la gola del Tajo con un salto di circa 100 metri: ci vollero oltre 40 anni per costruirlo. Nelle sue celle interne furono rinchiusi prigionieri durante la guerra civile spagnola.'},
-      {t:'Plaza de Toros de Ronda', info:'Una delle arene più antiche di Spagna (1785), culla della corrida moderna “a piedi” grazie alla famiglia Romero. Ospita anche un museo sulla storia della tauromachia.'},
-      {t:'Palacio de Mondragón, Ronda', info:'Antica residenza dei governatori mori, oggi museo cittadino. I giardini a terrazze offrono uno dei migliori scorci sulla gola del Tajo, spesso meno affollato di altri punti panoramici.'},
-      {t:'Alameda del Tajo, Ronda', info:'Parco pubblico ottocentesco con un balcone panoramico a strapiombo sulla valle, luogo di passeggio prediletto dai residenti al tramonto.'},
-      {t:'Baños Árabes di Ronda', info:'Bagni arabi dell’XI-XIII secolo tra i meglio conservati d’Europa, costruiti vicino a un fiume per l’approvvigionamento d’acqua. Volte a stella e archi a ferro di cavallo ancora ben leggibili.'},
-      {t:'Casa del Rey Moro e i suoi giardini, Ronda', info:'Nonostante il nome, l’edificio attuale è del XVIII secolo; i giardini terrazzati furono disegnati dal paesaggista francese Forestier. Da qui parte “La Mina”, una scalinata scavata nella roccia che scende fino al fiume, usata un tempo per rifornire d’acqua la città durante gli assedi.'}
+      {t:'Real Escuela Andaluza del Arte Ecuestre, Jerez', info:'Scuola di equitazione famosa in tutto il mondo per lo spettacolo "Cómo Bailan los Caballos Andaluces", che unisce dressage, musica e costumi d\'epoca.'},
+      {t:'Alcázar de Jerez', info:'Fortezza almohade del XII secolo, presa durante la Reconquista nel 1264. Al suo interno la moschea originaria fu convertita in cappella; si visitano anche i bagni arabi e il barocco Palacio de Villavicencio.'},
+      {t:'Catedral de San Salvador, Jerez', info:'Si affaccia su Plaza de la Encarnación con una scenografica scalinata d\'accesso; costruita tra XVII e XVIII secolo su una precedente moschea.'},
+      {t:'Bodega Tío Pepe, Jerez', info:'Una delle cantine di sherry più storiche di Spagna, attiva da oltre 180 anni proprio di fronte all\'Alcázar; propone visite guidate e degustazioni.'},
+      {t:'Barrio de Santiago, Jerez', info:'Quartiere considerato una delle culle del flamenco, con il Centro Andaluz del Flamenco e la statua dedicata al cantaor "El Terremoto".'},
+      {t:'Casco Antiguo e Plaza del Arenal, Jerez', info:'Il centro storico si visita comodamente a piedi: qui si trova l\'Antiguo Cabildo (1575), l\'ex municipio con facciata rinascimentale, e le vivaci piazze dei bar di tapas.'}
     ],
-    transit:['Centro storico piccolo e compatto: si visita interamente a piedi.'],
-    taxi:['Radio Taxi Ronda su chiamata; utile per la stazione o per raggiungere punti panoramici fuori dal centro.'],
+    transit:['Centro storico compatto e pianeggiante: si visita interamente a piedi.'],
+    taxi:['Radio Taxi Jerez su chiamata; utile per l\'aeroporto o per raggiungere le bodegas fuori dal centro.'],
     evening:[
-      {t:'Cena con vista sulla gola del Tajo illuminata, Ronda', info:'Diversi ristoranti vicino al Puente Nuevo offrono terrazze affacciate sulla gola, suggestiva anche di sera con le luci del ponte.'},
-      {t:'Passeggiata serale sull’Alameda del Tajo, Ronda', info:'Il parco panoramico è un luogo di passeggio tipico dei residenti nelle ore serali, con vista sulla vallata sottostante.'}
+      {t:'Spettacolo o tablao di flamenco, Jerez', info:'Jerez è considerata una delle culle del flamenco: diversi locali del Barrio de Santiago propongono spettacoli serali con cante, baile e chitarra dal vivo.'},
+      {t:'Degustazione di sherry serale in una bodega, Jerez', info:'Alcune bodegas storiche del centro organizzano degustazioni serali di sherry accompagnate da tapas, un\'esperienza tipica della città.'}
     ]
   },
   {
@@ -766,8 +766,8 @@ const legs = [
   {date:'4/8',  from:'Arles',      to:'Tarragona',   km:486, tempo:'4:48', pedaggio:25,  carburante:43.74},
   {date:'6/8',  from:'Tarragona',  to:'Granada',     km:753, tempo:'7:15', pedaggio:0,   carburante:67.77},
   {date:'10/8', from:'Granada',    to:'Siviglia',    km:250, tempo:'2:30', pedaggio:0,   carburante:22.50},
-  {date:'14/8', from:'Siviglia',   to:'Ronda',       km:133, tempo:'2:18', pedaggio:0,   carburante:11.97},
-  {date:'15/8', from:'Ronda',      to:'Tarifa',      km:136, tempo:'2:06', pedaggio:5,   carburante:12.24},
+  {date:'14/8', from:'Siviglia',   to:'Jerez de la Frontera', km:92, tempo:'1:10', pedaggio:0,   carburante:8.28},
+  {date:'15/8', from:'Jerez de la Frontera', to:'Tarifa', km:105, tempo:'1:15', pedaggio:0,   carburante:9.45},
   {date:'22/8', from:'Tarifa',     to:'Valencia',    km:756, tempo:'7:24', pedaggio:16,  carburante:68.04},
   {date:'23/8', from:'Valencia',   to:'Saintes-Maries-de-la-Mer', km:739, tempo:'8:42', pedaggio:23, carburante:66.51},
   {date:'26/8', from:'Saintes-Maries-de-la-Mer', to:'Lodi', km:627, tempo:'6:18', pedaggio:61, carburante:56.43}
@@ -779,7 +779,7 @@ const payments = [
   {id:'tarragona', luogo:'Tarragona',      importo:198.00, addebito:'31/07/26', cancellazione:'01/08/26'},
   {id:'granada',   luogo:'Granada',        importo:251.23, addebito:'01/08/26', cancellazione:'02/08/26'},
   {id:'siviglia',  luogo:'Siviglia',       importo:354.10, addebito:'06/08/26', cancellazione:'07/08/26'},
-  {id:'ronda',     luogo:'Ronda',          importo:61.00,  addebito:'11/08/26', cancellazione:'12/08/26'},
+  {id:'jerez',     luogo:'Jerez de la Frontera', importo:111.60, addebito:'09/08/26', cancellazione:null},
   {id:'tarifa',    luogo:'Tarifa',         importo:800.00, addebito:'30/07/26', cancellazione:'31/07/26'},
   {id:'valencia',  luogo:'Valencia',       importo:59.00,  addebito:'17/08/26', cancellazione:'18/08/26'},
   {id:'saintes',   luogo:'Saintes-Maries', importo:266.57, addebito:'16/08/26', cancellazione:'17/08/26'}
@@ -789,7 +789,7 @@ function buildDayMap(){
   const map = {};
   const ranges = {
     arles:[3,4], tarragona:[4,6], granada:[6,10], siviglia:[10,14],
-    ronda:[14,15], tarifa:[15,22], valencia:[22,23], saintes:[23,26]
+    jerez:[14,15], tarifa:[15,22], valencia:[22,23], saintes:[23,26]
   };
   for(const id in ranges){
     const [a,b] = ranges[id];
@@ -1047,8 +1047,8 @@ function showStop(id){
       </div>
     </div>
     <div class="maplinks">
-      <a class="maplink" href="${appleDirLink(['ronda','tarifa','saintes'].includes(s.id) ? s.accomAddress : s.accomName + ', ' + s.accomAddress)}" target="_blank" rel="noopener">↗ Indicazioni Apple Maps</a>
-      <a class="maplink secondary" href="${googlePlaceLink(['ronda','tarifa','saintes'].includes(s.id) ? s.accomAddress : s.accomName + ', ' + s.accomAddress)}" target="_blank" rel="noopener">Apri in Google Maps</a>
+      <a class="maplink" href="${appleDirLink(['tarifa','saintes'].includes(s.id) ? s.accomAddress : s.accomName + ', ' + s.accomAddress)}" target="_blank" rel="noopener">↗ Indicazioni Apple Maps</a>
+      <a class="maplink secondary" href="${googlePlaceLink(['tarifa','saintes'].includes(s.id) ? s.accomAddress : s.accomName + ', ' + s.accomAddress)}" target="_blank" rel="noopener">Apri in Google Maps</a>
       <a class="maplink secondary" href="${bookingSearchLink(s.accomName + ', ' + s.name)}" target="_blank" rel="noopener">🛏 Cerca su Booking.com</a>
     </div>
     ${checkHtml}
